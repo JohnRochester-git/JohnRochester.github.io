@@ -8,10 +8,50 @@
     <style>
       .callout.large 
       {
-        background: linear-gradient(to right, #ff9900, #ffcc66);
+        background: linear-gradient(to right, rgba(255,153,0,0) 0%, #ff9900 25%, #ff9900 75%, rgba(255,153,0,0) 100%);
         color: white;
         padding: 100px 20px;
+        text-align: center;
       }
+      .info-box  
+      { 
+        background: #fff3e0;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      .footer   
+      {
+        text-align: center;
+        padding: 20px;
+        background: #ff9900;
+        color: white
+      }
+      /* Custom button styles */
+    .button.custom-quote {
+      background: white;
+      color: #ff9900;
+      border: 2px solid #ff9900;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .button.custom-quote:hover {
+      background: #ff9900;
+      color: white;
+    }
+
+    .button.custom-learn {
+      background: white;
+      color: #ff9900;
+      border: 2px solid #ff9900;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .button.custom-learn:hover {
+      background: #ff9900;
+      color: white;
+    }
     </style>
   </head>
   <body>
@@ -21,7 +61,7 @@
       <div class="top-bar-left">
         <ul class="menu">
           <li class="menu-text">
-              <img src = "file:///C:/Users/LukeR/Pictures/Screenshot%202025-09-04%20134602.png" alt ="OrangeFruit Logo" style="height: 40px;">
+              <img src = "image/logo.png" alt ="OrangeFruit Logo" style="height: 40px;">
           </li>
           <li><a href="#">One</a></li>
           <li><a href="#">Two</a></li>
@@ -29,10 +69,10 @@
       </div>
       <div class="top-bar-right">
         <ul class="menu">
-          <li><a href="#">Three</a></li>
-          <li><a href="#">Four</a></li>
-          <li><a href="#">Five</a></li>
-          <li><a href="#">Six</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Coverage</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -40,35 +80,35 @@
 
     <div class="callout large">
       <div class="row column text-center">
-        <h1>OranageFruit Auto Insurance</h1>
-        <p class="lead">Fresh Savings. Juciy coverage. OrangeFruit Car Insurance - where proctection meets affordability.</p>
-        <a href="#" class="button large">Learn More</a>
-        <a href="#" class="button large hollow">Learn Less</a>
+        <h1>OrangeFruit Auto Insurance</h1>
+        <p class="lead">Fresh Savings. Juicy coverage. OrangeFruit Car Insurance - where protection meets affordability.</p>
+        <a href="#" class="button large custom-learn">Learn More</a>
+        <a href="#" class="button large custom-quote">Get a Free Quote</a>
       </div>
     </div>
 
     <div class="row">
       <div class="medium-6 columns medium-push-6">
-        <img class="thumbnail" src="https://placehold.it/750x350">
+        <img class="thumbnail" src="">
       </div>
       <div class="medium-6 columns medium-pull-6">
-        <h2>Our Agency, our selves.</h2>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor.</p>
+        <h2>Our Agency:</h2>
+        <p>Welcome to OrangeFruit Car Insurance – where fresh savings meet juicy protection! We believe affordable coverage shouldn’t mean sacrificing quality or peace of mind. With OrangeFruit, you get reliable protection, simple plans, and customer-first service at a price that fits your budget. Drive with confidence knowing we’ve got you covered, every mile of the way.</p>
       </div>
     </div>
 
     <div class="row">
       <div class="medium-4 columns">
-        <h3>Photoshop</h3>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        <h3>Low Cost:</h3>
+        <p>OrangeFruit offers car insurance plans designed to fit your budget without cutting corners on protection. We believe quality coverage should be accessible to everyone, which is why our rates are among the most competitive in the industry.</p>
       </div>
       <div class="medium-4 columns">
-        <h3>Javascript</h3>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        <h3>No Extra Fees:</h3>
+        <p>With OrangeFruit, what you see is what you pay—no hidden charges or surprise fees. Our transparent pricing ensures you always know exactly where your money is going.</p>
       </div>
       <div class="medium-4 columns">
-        <h3>Marketing</h3>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        <h3>Affordable Coverage:</h3>
+        <p>Enjoy comprehensive coverage that won’t break the bank. OrangeFruit delivers the perfect balance of protection and price, so you can drive with confidence knowing you’re fully covered at an affordable rate.</p>
       </div>
     </div>
 
@@ -76,19 +116,24 @@
 
     <div class="row column">
       <ul class="vertical medium-horizontal menu expanded text-center">
-        <li><a href="#"><div class="stat">28</div><span>Websites</span></a></li>
-        <li><a href="#"><div class="stat">43</div><span>Apps</span></a></li>
-        <li><a href="#"><div class="stat">95</div><span>Ads</span></a></li>
-        <li><a href="#"><div class="stat">59</div><span>Cakes</span></a></li>
-        <li><a href="#"><div class="stat">18</div><span>Logos</span></a></li>
+        <li><a href="#"><div class="stat">25</div><span>States Covered</span></a></li>
+        <li><a href="#"><div class="stat">1000+</div><span>Satisfied Customers</span></a></li>
+        <li><a href="#"><div class="stat">95%</div><span>Satisfaction Rate</span></a></li>
+        <li><a href="#"><div class="stat">24\7</div><span>Customer Support</span></a></li>
+        <li><a href="#"><div class="stat">Flexiable</div><span>Insurance Payment Plans</span></a></li>
       </ul>
     </div>
 
     <hr>
 
     <div class="row column">
-      <h3>Our Recent Work</h3>
+      <h3>Ready to Save?</h3>
+      <a href="#" class="button large custom-quote">Get a Free Quote</a>
     </div>
+    
+    <hr>
+
+
 
     <div class="row medium-up-3 large-up-4">
       <div class="column">
@@ -131,13 +176,8 @@
 
     <hr>
 
-    <div class="row column">
-      <ul class="menu">
-        <li><a href="#">One</a></li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
-        <li><a href="#">Four</a></li>
-      </ul>
+    <div class="row column text-center">
+      <p>&copy; 2025 OrangeFruit Insurance | Call us (800) 123-4567 | Email: support@orangefruit.com</p>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
