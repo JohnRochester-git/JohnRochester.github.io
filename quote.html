@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OrangeFruitAuto – Free Quote</title>
+
+<style>
+/* Global reset & fonts */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.form-wrapper {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Branding header */
+.form-wrapper h1 {
+  text-align: center;
+  color: #ff6a00;            /* OrangeFruit brand accent */
+  margin-bottom: 10px;
+}
+.form-wrapper p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+/* Form elements */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #ff6a00;
+  outline: none;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #ff6a00;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #e45f00;
+}
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+  .form-wrapper {
+    margin: 30px 15px;
+    padding: 30px 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="form-wrapper">
+  <h1>OrangeFruitAuto</h1>
+  <p>Fill out the form below to receive your free auto insurance quote.</p>
+
+  <form action="https://your-backend-endpoint" method="POST">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" name="fullName" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required />
+
+    <label for="vehicle">Vehicle Make & Model</label>
+    <input type="text" id="vehicle" name="vehicle" required />
+
+    <label for="year">Vehicle Year</label>
+    <input type="number" id="year" name="year" min="1980" max="2025" required />
+
+    <label for="state">State of Residence</label>
+    <select id="state" name="state" required>
+      <option value="">-- Select State --</option>
+      <option value="AL">Alabama</option>
+      <option value="TX">Texas</option>
+      <option value="LA">Louisiana</option>
+      <option value="NV">Nevada</option>
+      <option value="OH">Ohio</option>
+      <!-- add more as needed -->
+    </select>
+
+    <label for="comments">Additional Details</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Tell us anything else we should know"></textarea>
+
+    <button type="submit">Request My Free Quote</button>
+  </form>
+</div>
+</body>
+</html>
